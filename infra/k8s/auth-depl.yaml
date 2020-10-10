@@ -14,11 +14,11 @@ spec:
         spec:
             containers:
                 - name: auth
-                  image: us.gcr.io/wiseup-292111/auth
+                  image: nedimkulovac/auth
                   resources:
                       limits:
                           memory: "256Mi"
-                          cpu: "500m"
+                          cpu: "100m"
                   # ports:
                   # - containerPort: <Port>
 ---
