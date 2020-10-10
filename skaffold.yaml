@@ -8,9 +8,9 @@ build:
   # local:
   #   push: false
   googleCloudBuild:
-    projectId: shop-ms-291411
+    projectId: wiseup-292111
   artifacts:
-    - image: us.gcr.io/shop-ms-291411/auth
+    - image: us.gcr.io/wiseup-292111/auth
       context: auth
       docker:
         dockerfile: Dockerfile
