@@ -5,10 +5,12 @@ deploy:
     manifests:
       - ./infra/k8s/*
 build:
-  local:
-    push: false
+  # local:
+  #   push: false
+  googleCloudBuild:
+    projectId: shop-ms-291411
   artifacts:
-    - image: nedimkulovac/auth
+    - image: us.gcr.io/shop-ms-291411/auth
       context: auth
       docker:
         dockerfile: Dockerfile

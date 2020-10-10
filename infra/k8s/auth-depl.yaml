@@ -14,14 +14,13 @@ spec:
         spec:
             containers:
                 - name: auth
-                  image: nedimkulovac/auth
+                  image: us.gcr.io/shop-ms-291411/auth
                   resources:
                       limits:
                           memory: "128Mi"
                           cpu: "500m"
                   # ports:
                   # - containerPort: <Port>
-
 ---
 apiVersion: v1
 kind: Service
