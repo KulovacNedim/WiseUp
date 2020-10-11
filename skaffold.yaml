@@ -5,12 +5,10 @@ deploy:
     manifests:
       - ./infra/k8s/*
 build:
-  # local:
-  #   push: false
-  googleCloudBuild:
-    projectId: wiseup-292111
+  local:
+    push: false
   artifacts:
-    - image: us.gcr.io/wiseup-292111/auth
+    - image: nedimkulovac/auth
       context: auth
       docker:
         dockerfile: Dockerfile
