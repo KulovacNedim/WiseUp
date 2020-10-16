@@ -16,9 +16,12 @@ spec:
         - name: client
           image: nedimkulovac/client
           resources:
+            requests:
+              memory: "129M"
+              cpu: "250m"
             limits:
-              memory: "256Mi"
-              cpu: "100m"
+              memory: "512Mi"
+              cpu: "500m"
 ---
 apiVersion: v1
 kind: Service
