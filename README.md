@@ -8,3 +8,6 @@ Microservices app supporting LMS/EMS and distance learning processes
 - NodeJS
 - NextJS
 - MongoDB
+
+## Custom NPM modules
+- [common](https://github.com/KulovacNedim/common)
